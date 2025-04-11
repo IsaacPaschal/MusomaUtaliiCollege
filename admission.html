@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Musoma Utalii College</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script>		
+      var slidePosition = 0;
+      SlideShow();
+      
+      // forward/Back controls
+      function plusSlides(n) {
+          SlideShow(slidePosition += n);
+      }
+
+      //  images controls
+      function currentSlide(n) {
+          SlideShow(slidePosition = n);
+      }
+
+      function SlideShow() {
+        var i;
+        var slides = document.getElementsByClassName("Containers");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        slidePosition++;
+        if (slidePosition > slides.length) {slidePosition = 1}
+        slides[slidePosition-1].style.display = "block";
+        setTimeout(SlideShow, 2000); // Change image every 5 seconds
+      } 
+    </script>			
+  </head>
+  <body onload="SlideShow()" onload="if(history.length>0)his.go(+1)">
+    <div class="container-fluid py-3">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <nav>
+            <div class="logo">
+              <p>MUTC</p>
+            </div>
+            <div class="">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="about us.html">About us</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+              </ul>
+            </div>   
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="font-weight-bold text-center text-secondary">Admission</h2>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-12">
+            <h2 class="font-weight-bold text-center text-secondary">Welcome to Our Online Admission Form</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <h5 style="color:rgb(53, 3, 59)" class="text-center"><b>A. Personal Details</b></h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <form>
+              <div class="mb-3 text-center">
+                <label class="font-weight-bold">Full Name</label>
+                <input class="form-control border" type="text" name="fullname" placeholder="" required>
+                <!-- <div id="emailhelp" class="form-text">We'll never share your email with anyone else.</div> -->
+              </div>
+            </form> 
+          </div>
+          <div class="col-lg-3">
+            <form>
+              <div class="mb-3 text-center">
+                <label class="font-weight-bold">Phone (10 Digits)</label>
+                <input type="Phone" class="form-control" id="phonenumber">
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-3">
+            <form class="form border-primary">
+              <div class="mb-3 text-center">
+                <label class="font-weight-bold">Email</label>
+                <input type="text" class="form-control" id="emailaddress">
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-3">
+            <form class="form border-primary">
+              <div class="mb-3 text-center">
+                <label class="font-weight-bold">Gender</label>
+                <select class="form-select">
+                  <option selected>Select Your Gender</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <h5 style="color:rgb(53, 3, 59)" class="text-center"><b>Next of Kin Details</b></h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <form class="form border-primary">
+              <div class="mb-3 text-center">
+                <label class="font-weight-bold">Guardian Name</label>
+                <input type="text" class="form-control" id="guardianname">
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4">
+            <form class="form border-primary">
+              <div class="mb-3 text-center">
+                <label class="font-weight-bold">Relationship</label>
+                <select class="form-select">
+                  <option selected>---Select--</option>
+                  <option value="1">Father</option>
+                  <option value="2">Mother</option>
+                  <option value="3">Other</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4">
+            <form class="form border-primary">
+              <div class="mb-3 text-center">
+                <label class="font-weight-bold">Guardian Phone</label>
+                <input type="phone" class="form-control" id="guardianphone">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <h5 style="color:rgb(53, 3, 59)" class="text-center"><b>Education Background</b></h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <form class="form border-primary">
+              <div class="mb-3 text-center">
+                <label class="font-weight-bold">Form IV index</label>
+                <input type="text" class="form-control" id="formfourindex">
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4">
+            <form class="form border-primary">
+              <div class="mb-3 text-center">
+                <label class="font-weight-bold">Form VI index</label>
+                <input type="text" class="form-control" id="formfiveindex">
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4">
+            <form class="form border-primary">
+              <div class="mb-3 text-center">
+                <label class="font-weight-bold">Year Graduated Form IV</label>
+                <input type="number" class="form-control" id="yeargraduated">
+              </div>
+            </form>
+          </div>
+        </div>
+          <div class="row mt-5">
+          <div class="col-lg-12">
+            <h5 style="color:rgb(53, 3, 59)" class="text-center"><b>D. Application Details</b></h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <form class="form border-primary">
+              <div class="mb-3 text-center">
+                <label class="font-weight-bold">Qualification</label>
+                <select class="form-select">
+                  <option selected>---Select--</option>
+                  <option value="1">O-Level</option>
+                  <option value="2">A-Level</option>
+                  <option value="3">Certificate</option>
+                  <option value="4">Diploma</option>
+                </select>
+              </div>
+            </form>
+          </div>
+            <div class="col-lg-4">
+            <form class="form border-primary">
+              <div class="mb-3 text-center">
+                <label class="font-weight-bold">Application For</label>
+                <select class="form-select">
+                  <option selected>---Select--</option>
+                  <option value="1">Certificate</option>
+                  <option value="2">Diploma</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4">
+            <form class="form border-primary">
+              <div class="mb-3 text-center">
+                <label class="font-weight-bold">Program (Course)</label>
+                <select class="form-select">
+                  <option selected>Select Program</option>
+                  <option value="1">Ualimu Shule Za Msingi Daraja la III A (GRADE A)</option>
+                  <option value="2">Diploma Ya Ualimu Sekondari (DSE)</option>
+                  <option value="3">Certificate in Early Childhood Education (Nursery School Teaching)-(ECE)</option>
+                  <option value="4">Diploma in Early Childhood Education (DECE)</option>
+                  <option value="5">Certificate in Tour Guiding (Tourism)-(TG)</option>
+                  <option value="6">Certificate in Information and Communication Technology Level II (ICT II)</option>
+                  <option value="7">Certificate in Information and Communication Technology Level III (ICT III)</option>
+                  <option value="8">Short Course in Computer Application (SC.ICT)</option>
+                  <option value="9">Certificate in Food Production (Hotel Management)-(FP)</option>
+                  <option value="10">Certificate in Laboratory Assistant Level II (LAB II)</option>
+                  <option value="11">Certificate in Laboratory Assistant Level III (LAB III)</option>
+                  <option value="12">Certificate in Electrical Installation Level II (EL II)</option>
+                  <option value="13">Certificate in Electrical Installation Level III (EL III)</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+      <div class="row mt-5">
+        <div class="col-lg-12 text-center">
+          <button type="submit" class="btn btn-primary w-20">Submit</button>
+        </div>
+      </div>
+    </div>
+    <footer class="art-footer text-center bg-primary mt-5">
+      <div class="container">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-12">
+            <div class="art-footer-inner">
+              <p class="font-weight-bold text-white">Copyright &copy 2024. All Rights Reserved. <a class="text-white" href='#' title='IPM' target='_blank'><b>&copyISACK PASCHAL MIKOSI</b></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Musoma Utalii College</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script>		
+      var slidePosition = 0;
+      SlideShow();
+      
+      // forward/Back controls
+      function plusSlides(n) {
+        SlideShow(slidePosition += n);
+      }
+
+      //  images controls
+      function currentSlide(n) {
+        SlideShow(slidePosition = n);
+      }
+
+      function SlideShow() {
+        var i;
+        var slides = document.getElementsByClassName("Containers");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        slidePosition++;
+        if (slidePosition > slides.length) {slidePosition = 1}
+        slides[slidePosition-1].style.display = "block";
+        setTimeout(SlideShow, 2000); // Change image every 5 seconds
+      } 
+    </script>			
+  </head>
+  <body onload="SlideShow()" onload="if(history.length>0)his.go(+1)">
+    <div class="container-fluid py-3">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <nav>
+            <div class="logo">
+                <p>MUTC</p>
+            </div>
+            <div class="">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="about us.html">About us</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+              </ul>
+            </div>   
+          </nav>
+        </div>
+      </div>
+    </div>
+      <div class="container my-5">
+        <h1 class="text-center mb-4 text-primary">OFFERED PROGRAMMES</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- GRADE A -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Ualimu Shule za Msingi Daraja la IIIA (GRADE A)</h5>
+                        <p class= "card-text">Duration: 2 Years</p>
+                    </div>
+                </div>
+            </div>
+            <!-- DSE -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Diploma ya Ualimu Sekondari (DSE)</h5>
+                        <p class="card-text">Duration: 2 Years</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ECE -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificate in Early Childhood Education (ECE)</h5>
+                        <p class="card-text">Duration: 2 Years</p>
+                    </div>
+                </div>
+            </div>
+            <!-- DECE -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Diploma in Early Childhood Education (DECE)</h5>
+                        <p class="card-text">Duration: 2 Years</p>
+                    </div>
+                </div>
+            </div>
+            <!-- LAB II -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificate in Laboratory Assistant Level II (LAB II)</h5>
+                        <p class="card-text">Duration: 2 Years</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Production -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificate in Food Production (Hotel Management) (FP)</h5>
+                        <p class="card-text">Duration: 2 Years</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ICT II -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificate in Information and Communication Technology Level II (ICT II)</h5>
+                        <p class="card-text">Duration: 2 Years</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ICT III -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificate in Information and Communication Technology Level III (ICT III)</h5>
+                        <p class="card-text">Duration: 1 Years</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Short Course -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Short Course in Computer Applications (SC.ICT)</h5>
+                        <p class="card-text">Duration: Course ya muda mfupi</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Electrical Installation II -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificate in Electrical Installation Level II (EL II)</h5>
+                        <p class="card-text">Duration: 2 Years</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Electrical Installation III -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificate in Electrical Installation Level III (EL III)</h5>
+                        <p class="card-text">Duration: 1 Years</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tourism -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificate in Tour Guiding (Tourism) (TG)</h5>
+                        <p class="card-text">Duration: 2 Years</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div> 
+    <footer class="art-footer text-center bg-primary">
+      <div class="container">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-12">
+            <div class="art-footer-inner">
+              <p class="font-weight-bold text-white">Copyright &copy 2024. All Rights Reserved. <a class="text-white" href='#' title='IPM' target='_blank'><b>&copyISACK PASCHAL MIKOSI</b></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+  </body>
+</html>

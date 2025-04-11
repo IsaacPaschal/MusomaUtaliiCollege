@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Musoma Utalii College</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script>		
+      var slidePosition = 0;
+      SlideShow();
+      
+      // forward/Back controls
+      function plusSlides(n) {
+        SlideShow(slidePosition += n);
+      }
+
+      //  images controls
+      function currentSlide(n) {
+        SlideShow(slidePosition = n);
+      }
+
+      function SlideShow() {
+        var i;
+        var slides = document.getElementsByClassName("Containers");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        slidePosition++; 
+        if (slidePosition > slides.length) {slidePosition = 1}
+        slides[slidePosition-1].style.display = "block";
+        setTimeout(SlideShow, 2000); // Change image every 5 seconds
+      } 
+    </script>			
+  </head>
+  <body onload="SlideShow()" onload="if(history.length>0)his.go(+1)">
+    <div class="container-fluid">
+      <div class="row mt-5 py-3">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <nav>
+            <div class="logo">
+                <p>MUTC</p>
+            </div>
+            <div class="">
+              <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="about us.html">About us</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+              </ul>
+            </div>   
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/mutc.jpg" style="width:100%" height="400">
+              </div>
+              <div class="carousel-item">
+                <img src="images/mutc5.jpg" style="width:100%" height="400">
+              </div>
+              <div class="carousel-item">
+                <img src="images/mutc4.jpg" style="width:100%" height="400">
+              </div>
+              <div class="carousel-item">
+                <img src="images/mutc2.jpg" style="width:100%" height="400">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>				
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <div class="card" style="width: 30rem; height: 25rem; text-">
+            <img src="images/mutc3.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-primary card border-primary">
+              <h3><p class="card-text">Welcome to musoma utalii college</p></h3>
+              <a class="btn btn-secondary" href="programs.html" role="button">Our Programs</a><br>
+              <a class="btn btn-primary" href="admission.html" role="button">Apply now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body" style="background-color:#279ED8;  color:white;">
+                <h4 class="text-center text-uppercase">OUR REGISTERED PROGRAMS</h4>
+            </div>
+          </div>
+        </div><br>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card border border-info h-100">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/grdA.jpeg" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body text-justify">
+                  <h5 class="card-title font-weight-bold">Ualimu Shule za Msingi Daraja la IIIA (GRADE A)</h5>
+                  <p>CHETI CHA KIDATO CHA NNE (CSEE) CHENYE UFAULU WA KUANZIA DIVISION I MPAKA III POINTS 25</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#specializeModal16">2 years</button>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card border border-info h-100">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/dplm.png" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body text-justify">
+                  <h5 class="card-title font-weight-bold">Diploma ya Ualimu Sekondari (DSE)</h5>
+                  <p>CHETI CHA KIDATO CHA SITA (ACSEE) CHENYE UFAULU WA KUANZIA PRINCIPAL PASSES MBILI</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#specializeModal16">2 years</button>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card border border-info h-100">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/nursry.jpeg" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body text-justify">
+                  <h5 class="card-title font-weight-bold">Certificate in Early Childhood Education (Nursery School Teaching) (ECE)</h5>
+                  <p>CERTIFICATE OF SECONDARY EDUCATION (CSEE) WITH AT LEAST TWO PASSESS/
+                     CHETI CHA KIDATO CHA NNE CHENYE UFAULU WA KUANZIA PASS MBILI</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#specializeModal16">1 year</button>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card border border-info h-100">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/nursry2.jpeg" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body text-justify">
+                  <h5 class="card-title font-weight-bold">Diploma in Early Childhood Education (DECE)</h5>
+                  <p>A HOLDER OF CERTIFICATE IN EARLY CHILD HOOD EDUCATION (NURSERY SCHOOL TEACHING)</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#specializeModal16">2 years</button>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card border border-info h-100">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/lab.jpeg" class="img-fluid" alt="..."><br><br>
+                <img src="images/lab1.jpeg" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body text-justify">
+                  <h5 class="card-title font-weight-bold">Certificate in Laboratory Assistant Level II (LABII)</h5>
+                  <p>CERTIFICATE OF SECONDARY EDUCATION (CSEE) WITH AT LEAST TWO PASSESS IN SCIENCE SUBJECTS/ 
+                    CHETI CHA KIDATO CHA NNE CHENYE UFAULU WA KUANZIA PASS MBILI KATIKA MASOMO YA SAYANSI</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#specializeModal16">2 years</button>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card border border-info h-100">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/fdpd.jpeg" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body text-justify">
+                  <h5 class="card-title font-weight-bold">Certificate in Food Production (Hotel Management) (FP)</h5>
+                  <p>CERTIFICATE OF SECONDARY EDUCATION (CSEE) WITH AT LEAST TWO PASSESS/ 
+                    CHETI CHA KIDATO CHA NNE CHENYE UFAULU WA KUANZIA PASS MBILI</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#specializeModal16">2 years</button>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card border border-info h-100">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/ict.jpeg" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body text-justify">
+                  <h5 class="card-title font-weight-bold">Certificate in Information and Communication Technology Level II (ICT II)</h5>
+                  <p>CERTIFICATE OF SECONDARY EDUCATION (CSEE) WITH AT LEAST TWO PASSESS/
+                    CHETI CHA KIDATO CHA NNE CHENYE UFAULU WA KUANZIA PASS MBILI</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#specializeModal16">2 years</button>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card border border-info h-100">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/ict1.jpeg" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body text-justify">
+                  <h5 class="card-title font-weight-bold">Certificate in Information and Communication Technology Level III (ICT III)</h5>
+                  <p>A HOLDER OF CERTIFICATE IN INFORMATION AND COMMUNICATION TECHNOLOGY LEVEL II (ICT II)</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#specializeModal16">1 year</button>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card border border-info h-100">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/ict2.png" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body text-justify">
+                  <h5 class="card-title font-weight-bold">Short Course in Computer Applications (SC.ICT)</h5>
+                  <p>MHITIMU WA KIDATO CHA NNE/ DARASA LA SABA MWENYE UJUZI WA KUSOMA NA KUANDIKA KWA KIINGEREZA NA KISWAHILI</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#specializeModal16">3 Months</button>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card border border-info h-100">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/el.png" class="img-fluid" alt="..."><br><br>
+                <img src="images/el4.jpeg" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body text-justify">
+                  <h5 class="card-title font-weight-bold">Certificate in Electrical Installation Level II (EL II)</h5>
+                  <p>CERTIFICATE OF SECONDARY EDUCATION (CSEE) WITH AT LEAST TWO PASSESS/ CHETI CHA KIDATO CHA NNE 
+                    CHENYE UFAULU WA KUANZIA PASS MBILI</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#specializeModal16">2 years</button>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card border border-info h-100">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/el2.jpeg" class="img-fluid" alt="..."><br><br>
+                <img src="images/el3.jpg" class="img-fluid" alt="..."><br><br>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body text-justify">
+                  <h5 class="card-title font-weight-bold">Certificate in Electrical Installation Level III (EL III)</h5>
+                  <p>A HOLDER OF CERTIFICATE IN ELECTRICAL INSTALLATION LEVEL II</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#specializeModal16">1 year</button>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card border border-info h-100">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/trsm.jpeg" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body text-justify">
+                  <h5 class="card-title font-weight-bold">Certificate in Tour Guiding (Tourism) (TG)</h5>
+                  <p>CERTIFICATE OF SECONDARY EDUCATION (CSEE) WITH AT LEAST TWO PASSESS/ 
+                    CHETI CHA KIDATO CHA NNE CHENYE UFAULU WA KUANZIA PASS MBILI</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#specializeModal16">3 years</button>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="art-footer text-center bg-primary">
+      <div class="container">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-12">
+            <div class="art-footer-inner">
+              <p class="font-weight-bold text-white">Copyright &copy 2023. All Rights Reserved. <a class="text-white" href='#' title='IPM' target='_blank'><b>&copyISACK PASCHAL MIKOSI</b></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+  </body>
+</html>
